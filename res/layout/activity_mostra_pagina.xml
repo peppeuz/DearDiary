@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/fotoGiornata"
+            android:contentDescription="@string/foto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar"
+            android:layout_margin="10dp"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_weight="1"
+    >
+        <TextView
+            android:id="@+id/testoGiornata"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data"
+            android:textSize="15sp"
+            android:layout_weight="6" />
+        
+        <TextView
+            android:id="@+id/dataGiornata"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/testo"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:textSize="13sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

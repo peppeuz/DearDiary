@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
+    
+    <LinearLayout
+        android:id="@+id/background_esterno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/copertina_dx">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/background_interno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/right" >
+
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/top"
+        android:layout_alignTop="@+id/central"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal" 
+        android:weightSum="1">
+        
+     	<TextView
+        	android:id="@+id/dataDomani"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="28dp"
+        	android:layout_marginLeft="35dp" 
+        	android:text="@string/data"
+        	android:textSize="8pt"
+        	android:layout_marginRight="100dp"/>
+     	
+     	<ImageView
+        	android:id="@+id/fotoViewDomani"
+        	android:layout_width="41dp"
+        	android:layout_height="54dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginTop="13dp"
+        	android:contentDescription="@string/foto"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/avatar" />
+   </LinearLayout>
+   
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp" 
+        android:layout_marginRight="40dp"
+        android:weightSum="1"
+        android:id="@+id/central">
+     	
+         <EditText
+             android:id="@+id/etDomani"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="75dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:ems="10"
+             android:hint="@string/et_domani"
+             android:imeOptions="actionSend"
+             android:inputType="text"
+             android:maxLines="2"
+             android:scrollbars="vertical"
+             android:singleLine="false"
+             android:textSize="10pt" >
+
+        	<requestFocus />
+   		 </EditText>
+   		 
+         <TextView
+        	android:id="@+id/tvDomani"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_marginBottom="50dp"
+        	android:layout_marginLeft="50dp"
+        	android:layout_marginRight="25dp"
+        	android:text=""
+        	android:textSize="10pt" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp" 
+        android:gravity="center"
+        android:layout_alignBottom="@id/central">
+
+    	<Button
+        	android:id="@+id/listaDomani"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginRight="31dp" 
+        	android:background="@drawable/lista"/>
+
+    
+
+    	<Button
+        	android:id="@+id/confermaDomani"
+        	style="?android:attr/buttonStyleSmall"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:background="@drawable/conferma" />
+
+     </LinearLayout>
+
+</RelativeLayout>

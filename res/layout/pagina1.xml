@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/background_esterno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/copertina_sx">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/background_interno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/left" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_alignTop="@+id/central"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal" 
+        android:weightSum="1">
+
+        <ImageView
+            android:contentDescription="@string/foto"
+            android:id="@+id/fotoView"
+            android:layout_width="41dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" 
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/dataOggi"
+            android:layout_toRightOf="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" 
+            android:text="data"
+            android:textSize="8pt"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp" 
+        android:layout_marginLeft="40dp"
+        android:weightSum="1"
+        android:id="@+id/central">
+
+        <EditText
+            android:id="@+id/etOggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="75dp"
+            android:ems="10"
+            android:hint="@string/et_oggi"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="20"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textSize="10pt" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/tvOggi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="50dp"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp" 
+        android:gravity="center"
+        android:layout_alignBottom="@id/central">
+
+        <Button
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="10dp"
+            android:background="@drawable/lista"/>
+
+        <Button
+            android:id="@+id/confermaOggi"
+            android:layout_width="48dp"
+            android:layout_height="48dp" 
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/conferma"/>
+
+    </LinearLayout>
+    
+</RelativeLayout>

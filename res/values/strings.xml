@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diary</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="label1">Oggi</string>
+    <string name="label2">Domani</string>
+    <string name="et_oggi">Cosa è successo oggi?</string>
+    <string name="title_activity_giornate">Giornate</string>
+    <string name="et_domani">Qualcosa in programma?</string>
+    <string name="title_activity_foto">Foto</string>
+    <string name="timezone">GMT+1</string>
+    <string name="_sdcard_deardiary_">/sdcard/deardiary/</string>
+    <string name="title_activity_dialog_opzioni">DialogOpzioni</string>
+    <string name="title_activity_main">DearDiary</string>
+    <string name="title_activity_mostra_pagina">MostraPagina</string>
+    <string name="title_activity_intro">Intro</string>
+    <string name="app_id">507190726005615</string>
+    <string name="lista">Lista</string>
+    <string name="foto">Foto</string>
+    <string name="data">data</string>
+    <string name="testo">Testo di prova</string>
+    <string name="scegli">Vuoi scattare una foto o sceglierne una dalla galleria?</string>
+    <string name="title_activity_modifica_pagina">ModificaPagina</string>
+    <string name="title_activity_intro">Intro</string>
+    <string name="enter">Enter</string>
+    <string name="friends">Keep in touch with your thoughts</string>
+    <string name="twitter">Share on Twitter</string>
+    <string name="facebook">Share on Facebook </string>
+    <string name="dear_diary">Dear Diary&#8230;</string>
+    <string name="modifica">Modifica</string>
+    <string name="mostra">Mostra</string>
+    <string name="cancella">Cancella</string>
+
+</resources>
